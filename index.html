@@ -17,7 +17,10 @@
               } ,
               fontFamilly: {
                 inter: ['Inter']
-              }
+              },
+              animation: {
+                'spin-slow':  'spin 2s linear infinite',
+              },
             }
           }
         }
@@ -96,7 +99,20 @@
     </form>
   </div>
 
-    <div class="mb-96"></div>
+  <hr class="my-20" />
+
+  <div class="w-40 h-40 bg-sky-500 mx-auto rounded-lg shadow-lg hover:rotate-100 hover:bg-pink-500 transition origin-top-left"></div>
+
+  <div class="w-40 h-40 bg-pink-500 rounded-lg mx-auto mt-20 group">
+    <div class="w-full h-full bg-sky-500 rounded-lg shadow-lg group-hover:rotate-180 origin-top-left transition duration-300 delay-200"></div>
+
+    <div class="w-40 h-40 bg-pink-500 mx-auto rounded-lg shadow-lg mt-20 animate-spin-slow"></div>
+
+
+  </div>
+
+  <div class="mb-96"></div>
+
     <script>
       const checkbox = document.querySelector('#toggle');
       const html = document.querySelector('html');
