@@ -1,8 +1,23 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [],
+  content: ["./index.html"],
+  darkMode: 'class',
   theme: {
-    extend: {},
-  },
+    extend: {
+          theme: {
+            extend: {
+              spacing: {
+                13: '3.25rem' ,
+              } ,
+              fontFamilly: {
+                inter: ['Inter']
+              },
+              animation: {
+                'spin-slow':  'spin 2s linear infinite',
+              } 
+            }
+          }
+        },
+      },
   plugins: [],
 }
