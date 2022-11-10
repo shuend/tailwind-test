@@ -9,6 +9,10 @@ module.exports = {
               spacing: {
                 13: '3.25rem' ,
               } ,
+              colors: {
+                kei: '#bada55',
+                sweat: '#87CEEB',
+              },
               fontFamilly: {
                 inter: ['Inter']
               },
